@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', function(){
         // Generate random positions
         var randomLeft = Math.random() * (1496 - buttonWidth);
         var randomTop = Math.random() * (350 - buttonHeight);
+        
         // Set the new position
         noButton.style.position = 'absolute';
         noButton.style.left = randomLeft + 'px';
