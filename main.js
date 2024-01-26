@@ -6,10 +6,14 @@ document.addEventListener('DOMContentLoaded', function(){
     
 
     noButton.addEventListener('mouseenter', function() {
-        // Generate random positions
-        var randomLeft = Math.random() * (window.innerWidth - noButton.offsetWidth);
-        var randomTop = Math.random() * (window.innerHeight - noButton.offsetHeight);
+
+        // Get button dimensions
+        var buttonWidth = noButton.offsetWidth;
+        var buttonHeight = noButton.offsetHeight;
         
+        // Generate random positions
+        var randomLeft = Math.random() * (1496 - buttonWidth);
+        var randomTop = Math.random() * (350 - buttonHeight);
         // Set the new position
         noButton.style.position = 'absolute';
         noButton.style.left = randomLeft + 'px';
