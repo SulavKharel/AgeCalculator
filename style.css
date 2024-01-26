@@ -6,6 +6,11 @@ body {
     background: var(--Primary);
 }
 
+
+h1 {
+    font-family: 'Pacifico';
+}
+
 .card {
     width: 30%;
     margin-inline: auto;
@@ -15,6 +20,7 @@ body {
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
     padding: 2%;
     text-align: center;
+    position: relative;
 }
 
 .button-1 {
@@ -47,4 +53,18 @@ body {
 .button-1:hover,
 .button-1:focus {
   background-color: #F082AC;
+}
+
+.thankyou-card {
+    display: none;
+    position: absolute;
+    top: 0;
+    margin: 10% 0 0 35%;
+    width: 20%;
+    text-align: center;
+    background-color:#EA4C89;
+    color: whitesmoke;
+    padding: 4%;
+    border-radius: 10px;
+    z-index: 999;
 }
